@@ -49,6 +49,11 @@
          * escolhido no no local *localStorage* sempre que o usuário selecionar
          * o tipo da fonte por meio do HTML select.
          */
+
+        var select = document.getElementById('font');
+        var value = select.options[select.selectedIndex].value;
+        localStorage.setItem('fonte', value);
+        document.querySelector("#text").style.fontFamily = value;
       }
 
       /**
