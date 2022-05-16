@@ -23,9 +23,9 @@
         * As opções do HTML select devem ser: Arial, Monaco e Bradley Hand
     -->
     <select name="select" id="font">
-      <option value="arial" selected>Arial</option>
-      <option value="monaco">Monaco</option>
-      <option value="bradley">Bradley Hand</option>
+      <option value="Arial" selected>Arial</option>
+      <option value="Monaco">Monaco</option>
+      <option value="Bradley Hand">Bradley Hand</option>
     </select>
     
     <script>
@@ -65,6 +65,8 @@
          * 3 - Altere o método `load` para recuperar o nome da fonte do *localStorage* e
          * estilizar o texto `Web Storage`
          */
+        let cor = localStorage.getItem('color') ;
+        document.querySelector("#text").style.color = cor;
       }
     </script>
   </body>
